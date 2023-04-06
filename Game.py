@@ -1,4 +1,3 @@
-
 def Game():
     print("Welcome")
     print("You find yourself looking towards a bridge and a cave.")
@@ -66,9 +65,11 @@ def Game():
                 print("B Fight")
                 C5 = input()
                 if C5 == "B":
-
+                    print("PLACEHOLDER: You fought.")
+                    Game()
                 elif C5 == "A":
-
+                    print("PLACEHOLDER: You ran.")
+                    Game()
     elif C1 == "C":
         print("You fall off the bridge and die, what did you expect lol")
         print("Game Over")
