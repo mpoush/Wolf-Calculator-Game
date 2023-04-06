@@ -14,13 +14,11 @@ def Game():
         if C2 == "A":
             print("You go down the left path and trip and fall and break your neck")
             print("Game Over")
-            Game()
         elif C2 == "B":
             print("You go down the right path and see a treasure chest, it has a marking that says 'one, th'")
             print("You ponder about what it means")
             print("You go to open it but suddenly feel blood trickle down your neck")
             print("Game Over")
-            Game()
     elif C1 == "B":
         print("You go across the bridge and see two paths")
         print("What do you do?")
@@ -32,14 +30,12 @@ def Game():
             print("You decide to go back across the bridge")
             print("but see a dark figure cutting the rope holding the bridge up and you plunge into the abyss")
             print("Game Over")
-            Game()
         elif C3 == "B":
             print("As you travel down the right path, you think you see a chest")
             print("But as you reach for it you suddenly fall into a hidden hole in the ground")
             print("You see a marking on the wall that says 'two, ek'")
             print("You try to escape bu someone drops a large rock on your head")
             print("Game Over")
-            Game()
         elif C3 == "A":
             print("As you start down the path you get a bad feeling and wonder if you should speed up, go back and cut the bridge, or hide in a bush")
             print("A Speed up")
@@ -52,12 +48,10 @@ def Game():
                 print("'You will find the key in death, numbered from one to four, put it together in the void, and destory the evil orb'")
                 print("It makes no sense, so you keep walking but fall off a cliff and die")
                 print("Game Over")
-                Game()
             elif C4 == "B":
                 print("You head back to the bridge and cut it down")
                 print("But as you turn to leave you get shoved into the abyss, never to be seen again")
                 print("Game Over")
-                Game()
             elif C4 == "C":
                 print("You quickly hide in a nearby bush, and just a few seconds later you hear somebody approaching")
                 print("Right as he walks infront of the bush you are in, he turns and looks you right in the eye...")
@@ -66,12 +60,14 @@ def Game():
                 C5 = input()
                 if C5 == "B":
                     print("PLACEHOLDER: You fought.")
-                    Game()
+                    print("Game Over")
                 elif C5 == "A":
                     print("PLACEHOLDER: You ran.")
-                    Game()
+                    print("Game Over")
     elif C1 == "C":
         print("You fall off the bridge and die, what did you expect lol")
         print("Game Over")
+
+if __name__ == '__main__':
+    while True:
         Game()
-Game()
